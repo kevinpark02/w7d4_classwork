@@ -1,10 +1,11 @@
 ul {
-    display: flex;
+    display: block;
+    // display: none;
     margin: 10px auto;
     justify-content: center;
 
     li {
-        margin-right: 10px;
+        margin-top: 10px;
     }
 
     .not-all:hover {
@@ -12,3 +13,5 @@ ul {
       text-decoration: none;
     }
 }
+
+

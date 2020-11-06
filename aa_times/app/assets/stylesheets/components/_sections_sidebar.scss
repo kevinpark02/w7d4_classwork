@@ -1,0 +1,45 @@
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown > ul {
+   
+    position: absolute;
+    /* use top, left, right, bottom to position */
+}
+ .dropdown ul>li:hover {
+     .subdropdown {
+         display: block;
+     }
+ }
+
+.dropdown:hover > ul {
+    /* applies the following style to uls inside .dropdown */
+    /* but only when .dropdown is being hovered over */
+    display: block;
+}
+
+.dropdown li {
+    display:none;
+    position: relative;
+}
+
+.dropdown li:after,
+.dropdown li:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    border-left: 5px solid gray;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.dropdown li:after {
+    right: 2px;
+    border-left: 5px solid white;
+    z-index: 1;
+}
